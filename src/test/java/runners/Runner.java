@@ -12,7 +12,6 @@ import org.junit.runner.RunWith;
         dryRun = false
 )
 
-
 public class Runner {
     /*
     Bir framework de bir tek runner classi yeterli olabilir
