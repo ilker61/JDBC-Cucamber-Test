@@ -6,5 +6,3 @@ Feature: US1004 Kullanici istenen tablodaki istenen field i listeleyebilir
     And kullanici DBUtils ile "tHOTEL" tablosundaki "Email" verilerini alir
     And kullanici DBUtils ile "Email" sutunundaki verileri okur
     And DBUtil ile tum "Email" degerlerini sira numarasi ile yazdirir
-
-    #feature dinamik olarak olusturuldu. herhangibir table den herhangi bir veri alinabilur
