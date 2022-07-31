@@ -8,10 +8,13 @@ public class DBUtils {
     private static Connection connection;
     private static Statement statement;
     private static ResultSet resultSet;
+
+    // =========================    ONEMLI  =====================================
     //BU METHOD COK KULLANACAGIZ
     //createConnection database e baglanmak icin. Burda url, username, password u kullanarak database baglaniyoruz
     //Database e ne zaman baglanmak isterse bu methodu cagrabiliriz
     //Bu method u data cok BeforeMethod icinde setup icin kullanacagiz
+
     public static void createConnection() {
         String url="jdbc:sqlserver://184.168.194.58:1433;databaseName=hotelmycamp ; user=techproed;password=P2s@rt65";
         String username="techproed";
@@ -23,9 +26,12 @@ public class DBUtils {
             e.printStackTrace();
         }
     }
+
+    // =========================    ONEMLI  =====================================
     //BU METHODU COK KULLANACAGIZ
     //Bu method DatabaDBUTilsse e baglandiktan sonra Yazilan query yi calistirmak icin
     //Bu method da statement ve resultset objesini olusturup query run ediyoruz
+
     public static void executeQuery(String query) {
         try {
             statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
