@@ -1,5 +1,6 @@
 package stepdefinitions;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import utilities.DBUtils;
 
@@ -21,6 +22,13 @@ public class HMC_DBUtils_stepdefinitions {
     public void kullanici_db_utils_ile_sutunundaki_verileri_okur(String field) throws SQLException {
     DBUtils.getResultset().first();
         System.out.println(DBUtils.getResultset().getString(field));
+
+    }
+
+    @And("DBUtil ile tum {string} degerlerini sira numarasi ile yazdirir")
+    public void dbutilIleTumDegerleriniSiraNumarasiIleYazdirir(String field) {
+
+
 
     }
 }
